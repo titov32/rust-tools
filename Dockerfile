@@ -76,9 +76,27 @@ RUN cargo install --target x86_64-unknown-linux-musl zoxide -j 8
 RUN cargo install --target x86_64-unknown-linux-musl xh -j 8
 RUN cargo install --target x86_64-unknown-linux-musl trippy -j 8
 
+RUN cargo install --git https://github.com/astral-sh/uv.git uv -j 8 --target x86_64-unknown-linux-musl
+
+RUN cargo install --target x86_64-unknown-linux-musl gping -j 8
+RUN cargo install --target x86_64-unknown-linux-musl --locked hyperfine -j 8
+RUN cargo install --target x86_64-unknown-linux-musl sd -j 8
+RUN cargo install --target x86_64-unknown-linux-musl gitu --locked -j 8
+RUN cargo install --target x86_64-unknown-linux-musl hexyl -j 8
+RUN cargo install --target x86_64-unknown-linux-musl xsv -j 8
+RUN cargo install --target x86_64-unknown-linux-musl t-rec -j 8
+RUN cargo install --target x86_64-unknown-linux-musl kmon -j 8
+RUN cargo install --target x86_64-unknown-linux-musl --locked pueue -j 8
+RUN cargo install --target x86_64-unknown-linux-musl --locked starship -j 8
+RUN cargo install --target x86_64-unknown-linux-musl grex -j 8
+
+
+
 # Trouble packages:
 # https://github.com/sectordistrict/intentrace
 #RUN cargo install --target x86_64-unknown-linux-musl intentrace -j 8
 #RUN cargo install --target x86_64-unknown-linux-musl topgrade -#j 8
+#RUN cargo install --target x86_64-unknown-linux-musl watchexec --locked -j 8
 #RUN cargo install --target x86_64-unknown-linux-musl mdcat -j 8
 #RUN cargo install --target x86_64-unknown-linux-musl difftastic -j 8
+#RUN cargo install --target x86_64-unknown-linux-musl termusic termusic-server --locked -j 8
