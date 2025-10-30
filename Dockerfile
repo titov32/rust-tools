@@ -74,6 +74,7 @@ RUN cargo install --target x86_64-unknown-linux-musl tokei -j 8
 RUN cargo install --target x86_64-unknown-linux-musl zoxide -j 8
 
 RUN cargo install --target x86_64-unknown-linux-musl xh -j 8
+RUN cargo install --target x86_64-unknown-linux-musl trippy -j 8
 
 # Trouble packages:
 # https://github.com/sectordistrict/intentrace
