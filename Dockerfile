@@ -50,7 +50,6 @@ RUN cargo install --target x86_64-unknown-linux-musl eza -j 8
 # https://github.com/pkolaczk/fclones
 RUN cargo install --target x86_64-unknown-linux-musl fclones -j 8
 RUN cargo install --target x86_64-unknown-linux-musl fd-find -j 8
-RUN cargo install --target x86_64-unknown-linux-musl fselect -j 8
 
 #RUN export RUSTFLAGS='-C target-feature=-crt-static' && cargo install --target x86_64-unknown-linux-musl jless -j 8
 
@@ -89,6 +88,8 @@ RUN cargo install --target x86_64-unknown-linux-musl kmon -j 8
 RUN cargo install --target x86_64-unknown-linux-musl --locked pueue -j 8
 RUN cargo install --target x86_64-unknown-linux-musl --locked starship -j 8
 RUN cargo install --target x86_64-unknown-linux-musl grex -j 8
+RUN cargo install --git https://github.com/RivoLink/leaf.git --target x86_64-unknown-linux-musl leaf -j 8
+#RUN cargo install --target x86_64-unknown-linux-musl fselect -j 8
 
 
 
